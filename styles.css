@@ -1,0 +1,222 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  line-height: 2.0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #004492;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a.logo {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.5em;
+}
+
+/* Estilos para hacer la página responsive */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px; /* Reducir el relleno de la barra de navegación */
+    height: auto; /* Permitir que la altura de la barra de navegación se ajuste según el contenido */
+  }
+
+  nav a.logo {
+    display: block; /* Convertir el título en un bloque para que se ajuste correctamente */
+    margin: 0 auto; /* Centrar el título */
+    font-size: 1.2em; /* Reducir el tamaño del texto del título */
+  }
+
+  nav img {
+    max-height: 40px; /* Ajustar la altura máxima de la imagen para dispositivos móviles */
+  }
+
+  nav a:first-child {
+    display: none; /* Ocultar el primer enlace (Inicio) en dispositivos móviles */
+  }
+
+  nav a {
+    display: block; /* Convertir los elementos de navegación en bloques para que se apilen verticalmente */
+    margin: 5px auto; /* Espaciado entre los elementos de navegación */
+    font-size: 0.4em; /* Reducir el tamaño del texto de los enlaces */
+  }
+
+  section {
+    padding: 20px 0; /* Aumentar el espacio alrededor de las secciones para evitar la superposición con la barra de navegación */
+  }
+
+  .image-grid img {
+    max-width: 100px; /* Reducir el tamaño de las imágenes en la cuadrícula */
+  }
+}
+
+section {
+  padding: 5% 0;
+  text-align: center;
+}
+
+section h1 {
+  margin-bottom: 3%;
+}
+
+/* Ajuste para el primer section */
+#home {
+  padding-top: 90px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#home h2 {
+  margin-bottom: 20px;
+}
+
+/* Hacer imágenes más pequeñas y responsivas */
+.image-grid img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 5px;
+}
+
+/* Hacer el video más pequeño y responsivo */
+#about video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: #ffffff;
+  border: 1px solid #0366d6;
+  padding: 20px;
+  border-radius: 20px;
+  width: calc(30% - 40px);
+  margin: 20px;
+  max-width: 300px;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+
+#contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#email {
+  background-color: #f0f0f0;
+}
+
+#mensaje {
+  background-color: #f0f0f0;
+  resize: none;
+}
+
+.btn-enviar {
+  background-color: #0366d6;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Cambiar color de fondo al pasar el mouse */
+.btn-enviar:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 1200px) {
+  .service {
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-grid img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid img {
+    max-width: 100px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #0366d6;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+}
